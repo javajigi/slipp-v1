@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE decorators>
+<decorators defaultdir="/WEB-INF/freemarker/decorators">
+	<excludes>
+		<pattern>/diaries/rss</pattern>
+		<pattern>/keepalive</pattern>
+		<pattern>/_ah/login**</pattern>
+		<pattern>/_ah/login**</pattern>
+		<pattern>/diaries/**/upload/form</pattern>
+		<pattern>/diaries/**/upload/completed</pattern>
+    </excludes>
+	<decorator name="subdefault" page="subdefault.ftl">
+		<pattern>/ideas**</pattern>
+		<pattern>/diaries**</pattern>
+	</decorator>
+	<decorator name="default" page="default.ftl">
+		<pattern>/*</pattern>
+	</decorator>
+</decorators>
